@@ -1,0 +1,21 @@
+@import '../../styles/styles';
+
+.main {
+  background: $alice-blue;
+  padding: 2rem;
+  height: 80vh;
+  color: $space-cadet;
+
+  &__header {
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    font-size: 72px;
+    letter-spacing: 1px;
+  }
+
+  &__description {
+    padding: 0 12rem;
+    text-align: center;
+  }
+}

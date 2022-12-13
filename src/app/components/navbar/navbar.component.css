@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: #2a324bff;
+  box-shadow: 8px 8px 24px 0px #42445a;
+}
+.navbar__item {
+  text-decoration: none;
+  color: #f7c59fff;
+  font-weight: 900;
+  transition: ease-in-out 0.3s;
+}
+.navbar__item:hover {
+  color: #767b91ff;
+  transition: ease-in-out 0.3s;
+}
+
+/*# sourceMappingURL=navbar.component.css.map */

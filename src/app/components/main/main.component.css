@@ -1,0 +1,19 @@
+.main {
+  background: #e1e5eeff;
+  padding: 2rem;
+  height: 80vh;
+  color: #2a324bff;
+}
+.main__header {
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  font-size: 72px;
+  letter-spacing: 1px;
+}
+.main__description {
+  padding: 0 12rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.component.css.map */

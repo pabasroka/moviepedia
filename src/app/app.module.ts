@@ -7,6 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NavbarComponent} from "./components/navbar/navbar.component";
 import {MainComponent} from "./components/main/main.component";
 import {FooterComponent} from "./components/footer/footer.component";
+import { MovieListComponent } from './components/movie/movie-list/movie-list.component';
+import { MovieDetailComponent } from './components/movie/movie-detail/movie-detail.component';
+import { MovieCardComponent } from './components/movie/movie-card/movie-card.component';
+import { AboutComponent } from './components/about/about.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,12 +21,17 @@ import {FooterComponent} from "./components/footer/footer.component";
     MainComponent,
     NavbarComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    MovieListComponent,
+    MovieDetailComponent,
+    MovieCardComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

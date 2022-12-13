@@ -1,0 +1,23 @@
+@import '../../styles/styles';
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: $space-cadet;
+  box-shadow: $box-shadow;
+
+  &__item {
+    text-decoration: none;
+    color: $peach-crayola;
+    font-weight: 900;
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+      color: $rhythm;
+      transition: ease-in-out 0.3s;
+    }
+  }
+
+}

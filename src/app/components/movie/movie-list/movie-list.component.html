@@ -1,0 +1,7 @@
+<div class="movie-list">
+  <ul *ngIf="movies">
+    <li *ngFor="let movie of movies">
+      {{ movie | json }}
+    </li>
+  </ul>
+</div>

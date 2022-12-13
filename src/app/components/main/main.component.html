@@ -1,1 +1,13 @@
-<p>main works!</p>
+<main class="main">
+  <h1 class="main__header">Moviepedia</h1>
+
+  <p class="main__description">
+    A Moviepedia is a platform where users can discover and watch the latest and greatest
+    films from around the world. The site typically features a clean and modern design, with
+    easy-to-use navigation that allows users to quickly search for movies by title.
+    With a wide range of movies to choose from, a movie website is the perfect destination for
+    cinephiles and casual movie-goers alike.
+  </p>
+
+  <app-movie-list *ngIf="movies" [movies]="movies"></app-movie-list>
+</main>
