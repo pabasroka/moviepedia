@@ -9,5 +9,25 @@
     cinephiles and casual movie-goers alike.
   </p>
 
-  <app-movie-list *ngIf="movies" [movies]="movies"></app-movie-list>
+  <div class="main__search">
+    <mat-form-field>
+      <mat-label>Search Movie</mat-label>
+      <input matInput placeholder="e.g. Fight Club" value="" (input)="searchMovie($event)">
+    </mat-form-field>
+  </div>
+
+
+  <mat-paginator #paginator
+                 class="main__paginator"
+                 (page)="handlePageEvent($event)"
+                 [length]="length"
+                 [pageSize]="pageSize"
+                 [disabled]="disabled"
+                 [showFirstLastButtons]="showFirstLastButtons"
+                 [hidePageSize]="hidePageSize"
+                 [pageIndex]="pageIndex"
+                 aria-label="Select page">
+  </mat-paginator>
+
+  <app-movie-list [moviesData]="movies"></app-movie-list>
 </main>

@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import * as urlPaths from '../constants/urlPaths';
 import {Movie} from "../interfaces/movie";
 import {Observable} from "rxjs";
+import {MovieList} from "../interfaces/movie-list";
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,11 @@ export class MovieService {
     return this.http.get<Movie>(urlPaths.getMovieById(id));
   }
 
-  getLatestMovies(): Observable<Array<Movie>> {
-    return this.http.get<Array<Movie>>(urlPaths.latestMovies());
+  getLatestMovie(): Observable<Movie> {
+    return this.http.get<Movie>(urlPaths.latestMovie());
+  }
+
+  getPopularMovies(pageNumber: number): Observable<MovieList> {
+    return this.http.get<MovieList>(urlPaths.getPopularMovies(pageNumber));
   }
 }

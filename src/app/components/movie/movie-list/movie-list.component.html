@@ -1,7 +1,7 @@
 <div class="movie-list">
-  <ul *ngIf="movies">
-    <li *ngFor="let movie of movies">
-      {{ movie | json }}
-    </li>
-  </ul>
+  <div *ngIf="moviesData" class="movie-list__items">
+    <div *ngFor="let movie of moviesData.results">
+      <app-movie-card [movie]="movie"></app-movie-card>
+    </div>
+  </div>
 </div>

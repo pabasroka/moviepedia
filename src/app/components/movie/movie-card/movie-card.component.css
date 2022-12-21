@@ -1,3 +1,16 @@
-
+.card {
+  display: flex;
+  width: 20rem;
+  height: 100%;
+  align-content: space-between;
+}
+.card__header {
+  justify-content: center;
+  align-content: center;
+}
+.card__header-title {
+  font-weight: 700;
+  font-size: 24px;
+}
 
 /*# sourceMappingURL=movie-card.component.css.map */

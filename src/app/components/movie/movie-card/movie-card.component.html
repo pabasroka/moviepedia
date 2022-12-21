@@ -1,1 +1,24 @@
-<p>movie-card works!</p>
+<mat-card class="card" *ngIf="movie">
+  <mat-card-header class="card__header">
+    <mat-card-title class="card__header-title">{{ movie.title }}</mat-card-title>
+  </mat-card-header>
+  <img *ngIf="movie.poster_path; else elseImage"
+       mat-card-image src="{{ urlPaths.coverPath(movie.poster_path) }}"
+       alt="Movie cover"
+       class="card__cover">
+  <ng-template #elseImage>
+    <img mat-card-image src="assets/images/placeholder.png"
+         alt="Movie cover"
+         class="card__cover">
+  </ng-template>
+  <mat-card-content class="card__content">
+    <p class="card__content-overview">
+      {{ movie.overview }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions class="card__actions">
+    <button mat-button>DETAILS</button>
+  </mat-card-actions>
+</mat-card>
+
+

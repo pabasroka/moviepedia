@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  width: 20rem;
+  height: 100%;
+  align-content: space-between;
+
+  &__header {
+    justify-content: center;
+    align-content: center;
+
+    &-title {
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+
+  &__cover {
+  }
+
+  &__content {
+  }
+
+  &__actions {
+  }
+}

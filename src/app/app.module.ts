@@ -12,6 +12,11 @@ import { MovieDetailComponent } from './components/movie/movie-detail/movie-deta
 import { MovieCardComponent } from './components/movie/movie-card/movie-card.component';
 import { AboutComponent } from './components/about/about.component';
 import {HttpClientModule} from "@angular/common/http";
+import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from "@angular/material/button";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -31,7 +36,12 @@ import {HttpClientModule} from "@angular/common/http";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    MatButtonModule,
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

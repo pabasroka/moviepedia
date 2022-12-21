@@ -3,7 +3,6 @@
 .main {
   background: $alice-blue;
   padding: 2rem;
-  height: 80vh;
   color: $space-cadet;
 
   &__header {
@@ -17,5 +16,22 @@
   &__description {
     padding: 0 12rem;
     text-align: center;
+  }
+  @media (max-width: 900px) {
+    &__description {
+      padding: 0 4rem;
+      text-align: center;
+    }
+  }
+
+  &__search {
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin: 5rem 0 3rem 0;
+  }
+
+  &__paginator {
+    background: $alice-blue;
   }
 }
