@@ -5,11 +5,12 @@
   width: 20rem;
   height: 100%;
   align-content: space-between;
+  color: $space-cadet;
 
   &__header {
     justify-content: center;
     align-content: center;
-    min-height: 10%;
+    min-height: 3%;
 
     &-title {
       font-weight: 700;
@@ -18,11 +19,12 @@
   }
 
   &__cover {
-    max-height: 45%;
   }
 
   &__content {
-
+    &-popularity {
+      text-align: center;
+    }
   }
 
   &__actions {

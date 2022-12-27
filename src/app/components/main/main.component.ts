@@ -45,7 +45,7 @@ export class MainComponent implements OnInit {
 
   length = 20;
   pageSize = 20;
-  pageIndex = 0;
+  pageIndex = 1;
   pageSizeOptions = [5, 10, 25];
 
   hidePageSize = false;
@@ -65,12 +65,6 @@ export class MainComponent implements OnInit {
       });
     }
   }
-
-  // setPageSizeOptions(setPageSizeOptionsInput: string) {
-  //   if (setPageSizeOptionsInput) {
-  //     this.pageSizeOptions = setPageSizeOptionsInput.split(',').map(str => +str);
-  //   }
-  // }
 
   searchMovie($event: Event) {
     const phrase = ($event.target as HTMLInputElement).value

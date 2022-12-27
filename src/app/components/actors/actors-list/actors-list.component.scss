@@ -1,7 +1,15 @@
 @import '../../../styles/styles';
 
-.movie-list {
-  color: $space-cadet;
+.actors-list {
+  background: $alice-blue;
+  padding: 4rem;
+
+  &__header {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+    padding: 6rem;
+  }
 
   &__items {
     display: grid;

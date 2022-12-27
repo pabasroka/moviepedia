@@ -17,8 +17,8 @@
     </p>
   </mat-card-content>
   <mat-card-actions class="card__actions">
-    <button mat-button>DETAILS</button>
+    <a [routerLink]="['/detail', movie.id]">
+      <button mat-button>DETAILS</button>
+    </a>
   </mat-card-actions>
 </mat-card>
-
-

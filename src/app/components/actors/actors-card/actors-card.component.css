@@ -3,21 +3,22 @@
   width: 20rem;
   height: 100%;
   align-content: space-between;
+  color: #2a324bff;
 }
 .card__header {
   justify-content: center;
   align-content: center;
-  min-height: 10%;
+  min-height: 3%;
 }
 .card__header-title {
   font-weight: 700;
   font-size: 24px;
 }
-.card__cover {
-  max-height: 45%;
+.card__content-popularity {
+  text-align: center;
 }
 .card__actions a {
   color: #2a324bff;
 }
 
-/*# sourceMappingURL=movie-card.component.css.map */
+/*# sourceMappingURL=actors-card.component.css.map */

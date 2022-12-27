@@ -17,6 +17,10 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
+import { ActorsListComponent } from './components/actors/actors-list/actors-list.component';
+import { ActorsCardComponent } from './components/actors/actors-card/actors-card.component';
+import {MatListModule} from "@angular/material/list";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -30,7 +34,9 @@ import {MatInputModule} from "@angular/material/input";
     MovieListComponent,
     MovieDetailComponent,
     MovieCardComponent,
-    AboutComponent
+    AboutComponent,
+    ActorsListComponent,
+    ActorsCardComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +47,9 @@ import {MatInputModule} from "@angular/material/input";
     MatButtonModule,
     MatPaginatorModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,31 @@
-
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  color: #2a324bff;
+  background: #e1e5eeff;
+  row-gap: 4rem;
+}
+.about__header {
+  text-align: center;
+  font-size: 52px;
+  letter-spacing: 1px;
+}
+.about__description {
+  padding: 0 12rem;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .about__description {
+    padding: 0 4rem;
+    text-align: center;
+  }
+}
+.about__api a {
+  color: #767b91ff;
+}
+.about__api a:hover {
+  color: #f7c59fff;
+}
 
 /*# sourceMappingURL=about.component.css.map */

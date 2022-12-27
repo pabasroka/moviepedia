@@ -1,0 +1,26 @@
+<mat-card class="card" *ngIf="person">
+  <mat-card-header class="card__header">
+    <mat-card-title class="card__header-title">{{ person.name }}</mat-card-title>
+  </mat-card-header>
+  <img *ngIf="person.profile_path; else elseImage"
+       mat-card-image src="{{ urlPaths.coverPath(person.profile_path) }}"
+       alt="Movie cover"
+       class="card__cover">
+  <ng-template #elseImage>
+    <img mat-card-image src="assets/images/placeholder.png"
+         alt="Movie cover"
+         class="card__cover">
+  </ng-template>
+  <mat-card-content class="card__content">
+    <p class="card__content-popularity" *ngIf="person.popularity">
+      Popularity: <b>{{ person.popularity }}</b>
+    </p>
+    <mat-list class="card__content-known-for">
+      <mat-list-item *ngFor="let movie of movies(person.known_for)">
+        <mat-icon matListItemIcon>movie</mat-icon>
+        <div matListItemTitle>{{ movie.title }}</div>
+        <div matListItemLine>{{ movie.releasedDate }}</div>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

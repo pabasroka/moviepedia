@@ -1,14 +1,21 @@
-.movie-list {
-  color: #2a324bff;
+.actors-list {
+  background: #e1e5eeff;
+  padding: 4rem;
 }
-.movie-list__items {
+.actors-list__header {
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+  padding: 6rem;
+}
+.actors-list__items {
   display: grid;
   grid-template-columns: repeat(auto-fit, 20rem);
   justify-content: space-between;
   row-gap: 1rem;
 }
 @media (max-width: 900px) {
-  .movie-list__items {
+  .actors-list__items {
     display: grid;
     grid-template-columns: repeat(auto-fit, 20rem);
     justify-content: center;
@@ -16,4 +23,4 @@
   }
 }
 
-/*# sourceMappingURL=movie-list.component.css.map */
+/*# sourceMappingURL=actors-list.component.css.map */

@@ -1,0 +1,10 @@
+<div class="actors-list">
+  <div class="actors-list__header">
+    Top 20 most popular actors!
+  </div>
+  <div *ngIf="persons" class="actors-list__items">
+    <div *ngFor="let person of persons.results">
+      <app-actors-card [person]="person"></app-actors-card>
+    </div>
+  </div>
+</div>
