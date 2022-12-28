@@ -1,1 +1,67 @@
-<p>movie-detail works!</p>
+<div class="movie-detail">
+  <main *ngIf="movie; else elseBlock" >
+    <div class="movie-detail__header">
+<!--      [ngStyle]="setBackground()"-->
+      <div class="movie-detail__header-title">
+        <h1>{{ movie.title }}</h1>
+      </div>
+      <img class="movie-detail__header-image" *ngIf="movie.poster_path"
+           mat-card-image src="{{ urlPaths.coverPath(movie.backdrop_path) }}"
+           alt="Movie cover">
+    </div>
+    <div class="movie-detail__content">
+      <div class="movie-detail__content-overview" *ngIf="movie.overview">
+        {{ movie.overview }}
+      </div>
+      <div class="movie-detail__content-budget" *ngIf="movie.budget">
+        Budget: <b>{{ movie.budget | currency }}</b>
+      </div>
+      <div class="movie-detail__content-budget" *ngIf="movie.revenue">
+        Revenue: <b>{{ movie.revenue | currency }}</b>
+      </div>
+      <div class="movie-detail__content-budget" *ngIf="movie.release_date">
+        Release date: <b>{{ movie.release_date | date}}</b>
+      </div>
+      <div class="movie-detail__content-budget" *ngIf="movie.vote_average">
+        Vote average: <b>{{ movie.vote_average | number}}</b>
+      </div>
+      <div class="movie-detail__content-lists">
+        <div class="movie-detail__content-production-companies" *ngIf="movie.production_companies">
+          <mat-list>
+            <div mat-subheader>Production companies:</div>
+            <mat-list-item *ngFor="let company of movie.production_companies">
+              <mat-icon matListItemIcon>movie</mat-icon>
+              <div matListItemTitle>{{ company.name }}</div>
+            </mat-list-item>
+          </mat-list>
+        </div>
+        <div class="movie-detail__content-spoken-languages" *ngIf="movie.spoken_languages">
+          <mat-list>
+            <div mat-subheader>Spoken languages:</div>
+            <mat-list-item *ngFor="let language of movie.spoken_languages">
+              <mat-icon matListItemIcon>language</mat-icon>
+              <div matListItemTitle>{{ language.english_name }}</div>
+              <div matListItemLine>{{ language.name }}</div>
+            </mat-list-item>
+          </mat-list>
+        </div>
+        <div class="movie-detail__content-genres" *ngIf="movie.genres">
+          <mat-list>
+            <div mat-subheader>Genres:</div>
+            <mat-list-item *ngFor="let genre of movie.genres">
+              <mat-icon matListItemIcon>theaters</mat-icon>
+              <div matListItemTitle>{{ genre.name }}</div>
+            </mat-list-item>
+          </mat-list>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <ng-template #elseBlock>
+    <div class="movie-detail--error">
+      <h1>Unavailable movie detail :(</h1>
+      <a [routerLink]="''" >Check another movie!</a>
+    </div>
+  </ng-template>
+</div>

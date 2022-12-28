@@ -22,10 +22,13 @@
   }
 
   &__content {
-
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
   }
 
   &__actions {
+    padding-top: 2rem;
     a {
       color: $space-cadet;
     }

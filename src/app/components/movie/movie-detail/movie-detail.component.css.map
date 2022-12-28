@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"movie-detail.component.css"}
+{"version":3,"sourceRoot":"","sources":["movie-detail.component.scss","../../../styles/styles.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA,YCDW;EDEX;EACA,OCNY;;ADQZ;EACE;;AACA;EACE;EACA;EACA,YCRG;;ADYP;EACE;EACA;EACA;EACA;;AAMA;EACE;EACA;EACA;;AAKF;EACE,OCpCQ;;ADsCV;EACE,OCvCQ;EDwCR;;AAEA;EACE,OC5CQ","file":"movie-detail.component.css"}

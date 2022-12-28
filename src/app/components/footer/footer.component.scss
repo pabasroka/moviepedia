@@ -2,5 +2,58 @@
 
 .footer {
   background: $space-cadet;
-  height: 20vh;
+  color: $rhythm;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+
+  &__header {
+    font-weight: 900;
+    font-size: 42px;
+    text-align: center;
+    color: $peach-crayola;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+
+    h3 {
+      color: $peach-crayola;
+    }
+  }
 }
+
+.content {
+  &__contact {
+    &--value {
+      color: $peach-crayola;
+    }
+  }
+
+  &__social-media {
+    text-align: center;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 1rem;
+
+      a {
+        mat-icon {
+          padding-right: 1rem;
+        }
+        text-decoration: none;
+        color: $rhythm;
+        &:hover {
+          color: $peach-crayola;
+        }
+      }
+    }
+  }
+}
+
