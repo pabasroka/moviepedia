@@ -3,3 +3,6 @@
   <router-outlet></router-outlet>
   <app-footer></app-footer>
 </div>
+<div (click)="scrollToTop()" class="scroll-to-top" *ngIf="pageYoffset > 0" >
+  <mat-icon class="icon-display">keyboard_arrow_up</mat-icon>
+</div>

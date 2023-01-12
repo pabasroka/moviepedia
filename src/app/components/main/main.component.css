@@ -15,6 +15,9 @@
   text-align: center;
 }
 @media (max-width: 900px) {
+  .main__header {
+    margin: 2rem 0;
+  }
   .main__description {
     padding: 0 4rem;
     text-align: center;

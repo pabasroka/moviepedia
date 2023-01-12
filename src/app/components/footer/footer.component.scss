@@ -57,3 +57,45 @@
   }
 }
 
+@media ($mobile-width) {
+  .footer {
+    padding: 1rem;
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+
+  .content {
+    &__contact {
+      p {
+        padding: 0.5rem 0;
+      }
+    }
+
+    &__social-media {
+      text-align: left;
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 1rem;
+
+        a {
+          mat-icon {
+            padding-right: 1rem;
+          }
+          text-decoration: none;
+          color: $rhythm;
+          &:hover {
+            color: $peach-crayola;
+          }
+        }
+      }
+    }
+  }
+}

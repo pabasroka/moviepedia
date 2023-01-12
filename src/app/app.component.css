@@ -3,4 +3,23 @@
   background: #e1e5eeff;
 }
 
+.scroll-to-top {
+  position: fixed;
+  background: #767b91ff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 2px solid #2a324bff;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  color: #2a324bff;
+}
+.scroll-to-top :hover {
+  color: #f7c59fff;
+}
+
+.icon-display {
+  transform: scale(2);
+}
+
 /*# sourceMappingURL=app.component.css.map */

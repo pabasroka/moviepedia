@@ -1,5 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {Movie} from "../../../interfaces/movie";
+import {Component, Input } from '@angular/core';
 import {MovieList} from "../../../interfaces/movie-list";
 
 @Component({
@@ -7,13 +6,9 @@ import {MovieList} from "../../../interfaces/movie-list";
   templateUrl: './movie-list.component.html',
   styleUrls: ['./movie-list.component.scss']
 })
-export class MovieListComponent implements OnInit {
+export class MovieListComponent {
 
   @Input()
   moviesData: MovieList | undefined;
-
-  ngOnInit(): void {
-    console.log(this.moviesData);
-  }
 
 }

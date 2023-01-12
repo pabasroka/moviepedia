@@ -18,9 +18,7 @@ export class ActorsListComponent implements OnInit {
   ngOnInit(): void {
     this.peopleService.getPopularPeoples(this.index).subscribe((data) => {
       this.persons = data;
-      console.log(this.persons);
     });
   }
-
 
 }

@@ -17,7 +17,7 @@
 }
 @media (max-width: 900px) {
   .about__description {
-    padding: 0 4rem;
+    padding: 0 0.5rem;
     text-align: center;
   }
 }

@@ -35,4 +35,19 @@
   color: #f7c59fff;
 }
 
+@media (max-width: 900px) {
+  .movie-detail {
+    padding: 2rem;
+  }
+  .movie-detail__header-title {
+    margin-bottom: 1rem;
+  }
+  .movie-detail__header-image {
+    width: 80vw;
+  }
+  .movie-detail__content-lists {
+    flex-direction: column;
+  }
+}
+
 /*# sourceMappingURL=movie-detail.component.css.map */

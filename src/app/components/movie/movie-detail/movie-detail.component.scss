@@ -22,10 +22,6 @@
     gap: 1rem;
     padding-top: 4rem;
 
-    &-description {
-
-    }
-
     &-lists {
       display: flex;
       flex-direction: row;
@@ -43,6 +39,27 @@
 
       &:hover {
         color: $peach-crayola;
+      }
+    }
+  }
+}
+
+@media ($mobile-width) {
+  .movie-detail {
+    padding: 2rem;
+
+    &__header {
+      &-title {
+        margin-bottom: 1rem;
+      }
+      &-image {
+        width: 80vw;
+      }
+    }
+
+    &__content {
+      &-lists {
+        flex-direction: column;
       }
     }
   }

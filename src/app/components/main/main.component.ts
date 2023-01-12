@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {MovieService} from "../../services/movie.service";
-import {Movie} from "../../interfaces/movie";
 import {MovieList} from "../../interfaces/movie-list";
 import {PageEvent} from "@angular/material/paginator";
 import {SearchService} from "../../services/search.service";
@@ -24,7 +23,7 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.movieService.getPopularMovies(this.pageIndex + 1).subscribe((movies: MovieList) => {
+    this.movieService.getPopularMovies(this.pageIndex).subscribe((movies: MovieList) => {
       this.movies = movies;
       this.moviesAll = movies;
       this.setupPaginator();
@@ -36,17 +35,16 @@ export class MainComponent implements OnInit {
 
     if (this.movies.total_pages > this.MAX_POPULAR_MOVIES_NUMBER) {
       this.length = this.MAX_POPULAR_MOVIES_NUMBER;
-      this.pageIndex = this.movies.page;
     } else {
       this.length = this.movies.total_pages;
-      this.pageIndex = this.movies.page;
     }
+
+    this.pageIndex = this.movies.page - 1;
   }
 
   length = 20;
   pageSize = 20;
   pageIndex = 1;
-  pageSizeOptions = [5, 10, 25];
 
   hidePageSize = false;
   showPageSizeOptions = true;
@@ -59,7 +57,6 @@ export class MainComponent implements OnInit {
     this.pageIndex = e.pageIndex;
 
     if (this.pageIndex < this.MAX_PAGE_INDEX) {
-      console.log(this.pageIndex);
       this.movieService.getPopularMovies(this.pageIndex + 1).subscribe((movies: MovieList) => {
         this.movies = movies;
       });

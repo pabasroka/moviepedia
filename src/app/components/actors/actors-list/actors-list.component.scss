@@ -18,7 +18,11 @@
     row-gap: 1rem;
   }
 
-  @media (max-width: 900px) {
+  @media ($mobile-width) {
+    &__header {
+      padding: 0 0 4rem 0;
+    }
+
     &__items {
       display: grid;
       grid-template-columns: repeat(auto-fit, 20rem);

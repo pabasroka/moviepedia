@@ -4,3 +4,22 @@
   width: 100%;
   background: $alice-blue;
 }
+.scroll-to-top{
+  position: fixed;
+  background: $rhythm;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 2px solid $space-cadet;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  color: $space-cadet;
+
+  :hover {
+    color: $peach-crayola;
+  }
+}
+
+.icon-display {
+  transform: scale(2);
+}

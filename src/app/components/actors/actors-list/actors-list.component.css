@@ -15,6 +15,9 @@
   row-gap: 1rem;
 }
 @media (max-width: 900px) {
+  .actors-list__header {
+    padding: 0 0 4rem 0;
+  }
   .actors-list__items {
     display: grid;
     grid-template-columns: repeat(auto-fit, 20rem);
