@@ -17,15 +17,6 @@
     padding: 0 12rem;
     text-align: center;
   }
-  @media ($mobile-width) {
-    &__header {
-      margin: 2rem 0;
-    }
-    &__description {
-      padding: 0 4rem;
-      text-align: center;
-    }
-  }
 
   &__search {
     justify-content: center;
@@ -36,5 +27,20 @@
 
   &__paginator {
     background: $alice-blue;
+  }
+}
+
+@media ($mobile-width) {
+  .main {
+    padding: 0 0 4rem 0;
+
+    &__header {
+      margin: 2rem 0;
+    }
+
+    &__description {
+      padding: 0 4rem;
+      text-align: center;
+    }
   }
 }

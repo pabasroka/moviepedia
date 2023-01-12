@@ -1,6 +1,7 @@
 .actors-list {
   background: #e1e5eeff;
   padding: 4rem;
+  color: #2a324bff;
 }
 .actors-list__header {
   font-weight: 900;
@@ -14,9 +15,13 @@
   justify-content: space-between;
   row-gap: 1rem;
 }
+
 @media (max-width: 900px) {
-  .actors-list__header {
+  .actors-list {
     padding: 0 0 4rem 0;
+  }
+  .actors-list__header {
+    padding: 4rem 0 4rem 0;
   }
   .actors-list__items {
     display: grid;

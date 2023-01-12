@@ -14,15 +14,6 @@
   padding: 0 12rem;
   text-align: center;
 }
-@media (max-width: 900px) {
-  .main__header {
-    margin: 2rem 0;
-  }
-  .main__description {
-    padding: 0 4rem;
-    text-align: center;
-  }
-}
 .main__search {
   justify-content: center;
   align-self: center;
@@ -31,6 +22,19 @@
 }
 .main__paginator {
   background: #e1e5eeff;
+}
+
+@media (max-width: 900px) {
+  .main {
+    padding: 0 0 4rem 0;
+  }
+  .main__header {
+    margin: 2rem 0;
+  }
+  .main__description {
+    padding: 0 4rem;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=main.component.css.map */

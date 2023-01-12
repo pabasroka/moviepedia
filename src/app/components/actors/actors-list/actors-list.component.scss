@@ -3,6 +3,7 @@
 .actors-list {
   background: $alice-blue;
   padding: 4rem;
+  color: $space-cadet;
 
   &__header {
     font-weight: 900;
@@ -17,10 +18,14 @@
     justify-content: space-between;
     row-gap: 1rem;
   }
+}
 
-  @media ($mobile-width) {
+@media ($mobile-width) {
+  .actors-list {
+    padding: 0 0 4rem 0;
+
     &__header {
-      padding: 0 0 4rem 0;
+      padding: 4rem 0 4rem 0;
     }
 
     &__items {
